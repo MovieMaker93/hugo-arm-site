@@ -1,0 +1,36 @@
+# section information
+section:
+  name: Projects
+  id: projects
+  enable: true
+  weight: 5
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# filter buttons
+buttons:
+- name: All
+  filter: "all"
+- name: Academic
+  filter: "academic"
+- name: Hobby
+  filter: "hobby"
+
+# your projects
+projects:
+
+- name: Thesis
+  role: Student
+  timeline: "Jan 2017 - Nov 2017"
+  url: "https://www.example.com"
+  summary: "Thesis about the facial recognition on a dataset used for training and testing"
+  tags: ["academic","ia"]
+
+- name: Raspberry cluster
+  logo: /images/sections/projects/toha.png
+  role: Owner
+  timeline: "Nov 2020 - Present"
+  repo: https://github.com/hossainemruz/toha
+  summary: A experimental local kubernates cluster with k3s 
+  tags: ["hobby","kubernates","hugo","docker","github action"]

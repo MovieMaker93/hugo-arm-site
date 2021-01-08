@@ -1,0 +1,49 @@
+# section information
+section:
+  name: Skills
+  id: skills
+  enable: true
+  weight: 2
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your Skills.
+# Give a summary of you each skill in the summary section.
+skills:
+
+- name: Java
+  logo: "/images/sections/skills/go.png"
+  summary: "Using as the main language for professional development. Capable of writing scalable, testable, and maintainable program."
+  url: "https://java.org/"
+
+- name: Adobe Experience Manager
+  logo: "/images/sections/skills/go.png"
+  summary: "Framework used to writing workflow process and frontend interaction for ecommerce site"
+
+- name: Jquery
+  logo: "/images/sections/skills/kubernetes.png"
+  summary: "Capable of writing scalable, testable, and maintanable frontend program with Jquery."
+  url: "https://kubernetes.io/"
+
+- name: Angular 2+
+  logo: "/images/sections/skills/go.png"
+  summary: "Using in the first experience as main js framework for writing scalable code for frontend"
+
+- name: Cloud Computing
+  logo: "/images/sections/skills/cloud.png"
+  summary: "Experienced with the AWS world development"
+
+- name: Docker
+  logo: "/images/sections/skills/docker.svg"
+  summary: "Write most of the programs as dockerized container. Experienced with multi-stage, multi-arch build process."
+  url: "https://www.docker.com/"
+
+- name: Linux
+  logo: "/images/sections/skills/linux.png"
+  summary: "Using as the main operating system. Capable of writing bash/shell scripts."
+
+- name: Git
+  logo: "/images/sections/skills/git.png"
+  summary: "Experienced with git-based development. Mostly, use Github. Also, have experience in working with GitLab."
+  url: "https://git-scm.com/"

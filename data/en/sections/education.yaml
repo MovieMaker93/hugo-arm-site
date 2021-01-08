@@ -1,0 +1,30 @@
+# section information
+section:
+  name: Education
+  id: education
+  template: sections/education-alt.html # Use "sections/education-alt.html for alternate template.
+  enable: true
+  weight: 4
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+degrees:
+- name: B.Sc. in Computer Science & Engineering
+  icon: fa-graduation-cap
+  timeframe: 2017
+  institution:
+    name: Universita degli studi di Salerno
+    url: "#"
+  takenCourses: #(optional)
+    # if true, the courses will be rendered as a table otherwise it will render as a list and the grades will be hidden.
+    showGrades: false
+    courses:
+    - name: Data Structures and Algorithm
+    - name: Network Security
+    - name: Java
+- name: Secondary School Certificate
+  icon: fa-school
+  timeframe: 2007-2012
+  institution:
+    name: Liceo scientifico A.gallotta

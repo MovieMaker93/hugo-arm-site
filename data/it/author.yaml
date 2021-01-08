@@ -1,0 +1,18 @@
+# alcune informazioni su di te
+name: "Alfonso Fortunato"
+nickname: "Moviemaker"
+# messaggio di saluto prima del tuo nome. Se non inserito, verrà visualizzato "Hi! I am"
+greeting: "Ciao, sono"
+image: "images/author/john.png"
+# inserisci le tue informazioni di contatto. Saranno utilizzate nel piè di pagina
+contactInfo:
+  email: "alfofed@gmail.com"
+  phone: "+0393394587027"
+
+# alcune informazioni di sintesi sulle tue competenze
+summary:
+  - Sono uno sviluppatore
+  - Sono un ingegnere del software
+  - Sono esperto in server
+  - Lavoro su progetti open-source
+  - Mi piace lavorare su progetti di diverso tipo

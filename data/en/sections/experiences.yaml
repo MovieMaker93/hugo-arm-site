@@ -1,0 +1,54 @@
+# section information
+section:
+  name: Experiences
+  id: experiences
+  enable: true
+  weight: 3
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true 
+
+# Your experiences
+experiences:
+- company:
+    name: Accenture 
+    url: "https://www.accenture.com"
+    location: Dhaka Branch
+    # company overview
+    overview: Accenture. is a widely recognized company for sofotware enterprise development. It builds software for everithing.
+  positions:
+  - designation: Solution developer
+    start: Gen 2019
+    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    # end: Dec 2020
+    # give some points about what was your responsibilities at the company.
+    responsibilities:
+    - Design and develop solution for ecommerce site with framework AEM (Adobe experience Manager)
+    - Provide performance analyis and solution for ecommerce (network infrustracture, code smell and database query)
+
+- company:
+    name: Engennering 
+    url: "https://www.engennering.com"
+    location: Naples
+    overview: Engeneering spa is a software company which focus on building site for public administration.
+  positions:
+  - designation: Software Engineer
+    start: June 2018
+    end: Dec 2018
+    responsibilities:
+    - Build site from scratch with Java and angular.
+    - Learn lot of stuff about code and deploy. 
+
+- company:
+    name: Sintex srl.
+    url: "https://www.sintex.com"
+    location: Salerno
+    overview: Sintex srl is a software company where you can learn to code .
+  positions:
+  - designation: Stage
+    start: Feb 2018
+    end: June 2018
+    responsibilities:
+    - Learn java
+    - Read and write lot of examples
+    - Learn software development

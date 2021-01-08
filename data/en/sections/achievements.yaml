@@ -1,0 +1,15 @@
+# section information
+section:
+  name: Achievements
+  id: achievements
+  enable: true
+  weight: 7
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your achievements achievements
+achievements:
+- title: Graduation
+  image: /images/sections/achievements/graduation-cap.jpg
+  summary: Received Bachelor of Science (B.Sc.) in Computer Science and Engineer from XYZ University.

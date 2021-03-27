@@ -23,14 +23,13 @@ projects:
 - name: Thesis
   role: Student
   timeline: "Jan 2017 - Nov 2017"
-  url: "https://www.example.com"
   summary: "Thesis about the facial recognition on a dataset used for training and testing"
   tags: ["academic","ia"]
 
 - name: Raspberry cluster
-  logo: /images/sections/projects/toha.png
+  logo: /images/sections/projects/raspLogoPng.png
   role: Owner
   timeline: "Nov 2020 - Present"
-  repo: https://github.com/hossainemruz/toha
+  url: https://github.com/hossainemruz/toha
   summary: A experimental local kubernates cluster with k3s 
   tags: ["hobby","kubernates","hugo","docker","github action"]

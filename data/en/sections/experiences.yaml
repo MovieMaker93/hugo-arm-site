@@ -13,9 +13,9 @@ experiences:
 - company:
     name: Accenture 
     url: "https://www.accenture.com"
-    location: Dhaka Branch
+    location: Naples
     # company overview
-    overview: Accenture. is a widely recognized company for sofotware enterprise development. It builds software for everithing.
+    overview: Accenture. is a widely recognized company for software enterprise development. It builds software for everything.
   positions:
   - designation: Solution developer
     start: Gen 2019
@@ -24,7 +24,7 @@ experiences:
     # give some points about what was your responsibilities at the company.
     responsibilities:
     - Design and develop solution for ecommerce site with framework AEM (Adobe experience Manager)
-    - Provide performance analyis and solution for ecommerce (network infrustracture, code smell and database query)
+    - Provide performance analyisis and solution for ecommerce (network infrustracture, code smell and database query)
 
 - company:
     name: Engennering 

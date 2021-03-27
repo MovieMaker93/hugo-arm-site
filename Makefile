@@ -5,6 +5,6 @@ MEX ?= "default Commit"
 all: commit push
 
 commit:
-	git commit -m $(MEX)
+	git commit -m "$(MEX)"
 push:
 	git push origin master

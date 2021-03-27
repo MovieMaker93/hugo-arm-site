@@ -6,6 +6,4 @@ description: Portfolio and personal blog of Alfonso Fortunato.
 
 # specify the list of custom menus that you want to show in the top navbar.
 # they will be separated by a divider from the main menus.
-customMenus:
-- name: Docs
-  url: https://toha-guides.netlify.app/posts/
+

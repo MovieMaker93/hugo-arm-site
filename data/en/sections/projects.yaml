@@ -39,5 +39,5 @@ projects:
   role: Owner
   timeline: "Feb 2021 - Present"
   repo: https://github.com/MovieMaker93/portfolio-alfonso
-  summary: Repository of my portfolio  
+  summary: My portfolio built with hugo and toha theme. 
   tags: ["hobby","hugo","docker","github action"]

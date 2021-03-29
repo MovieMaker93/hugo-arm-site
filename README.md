@@ -6,4 +6,8 @@ I choose as theme the Toha theme and i customized it with my contents and config
 
 If you want to try it on local environment, pull it and :
 
-'hugo server start'
+`hugo server start`
+
+The site is deployed to netlify configured through netlify.toml. 
+Every commits to master repository, automaticaly trigger the deploy on netlify so the site is up to date everytime.
+

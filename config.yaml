@@ -53,7 +53,7 @@ params:
     favicon: /images/site/favicon_alfo.jpeg
 
   # GitHub repo URL of your site
-  gitRepo: https://github.com/hugo-toha/hugo-toha.github.io
+  gitRepo: https://github.com/MovieMaker93/portfolio-alfonso
 
   # specify whether you want to write some blog posts or not
   enableBlogPost: true

@@ -1,4 +1,4 @@
-# portfolio-alfonso
+# My-portfolio
 My portfolio and blog
 
 My portfolio is created with hugo framework, you can find information [here](https://gohugo.io/)  

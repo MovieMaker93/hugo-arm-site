@@ -31,7 +31,7 @@ projects:
   role: Owner
   timeline: "Nov 2020 - Present"
   url: #
-  summary: A experimental local kubernates cluster with k3s 
+  summary: A experimental local kubernates cluster with k3s (Blog post incoming about it)
   tags: ["hobby","kubernates","hugo","docker","github action"]
 
 - name: My portfolio and blog

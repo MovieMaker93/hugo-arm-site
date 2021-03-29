@@ -30,6 +30,14 @@ projects:
   logo: /images/sections/projects/raspLogoPng.png
   role: Owner
   timeline: "Nov 2020 - Present"
-  url: https://github.com/hossainemruz/toha
+  url: #
   summary: A experimental local kubernates cluster with k3s 
   tags: ["hobby","kubernates","hugo","docker","github action"]
+
+- name: My portfolio and blog
+  logo: /images/sections/projects/raspLogoPng.png
+  role: Owner
+  timeline: "Feb 2021 - Present"
+  repo: https://github.com/MovieMaker93/portfolio-alfonso
+  summary: Repository of my portfolio  
+  tags: ["hobby","hugo","docker","github action"]

@@ -8,6 +8,6 @@ For testing purpose on local env i do:
 
 `hugo server start`
 
-The site is deployed to netlify (free domain). The configuration about netlify is inside the config.toml file.
+The site is deployed to netlify (free domain). The configuration about netlify is inside the config.toml file.  
 Every commits to master repository, automaticaly trigger the deploy on netlify so the site is up to date everytime.
 

@@ -1,7 +1,7 @@
 ---
 title: "Raspberry cluster"
 date: 2021-03-29T06:00:23+06:00
-hero: /images/posts/writing-posts/cluster.jpeg
+hero: /images/posts/writing-posts/raspberry.svg
 description: My raspberry cluster setup overview and k3s installation 
 menu:
   sidebar:

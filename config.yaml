@@ -5,7 +5,7 @@ title: "Alfonso"
 theme: "toha"
 author: 
  name: "Alfonso Fortunato"
- email: "alfofed@gmail.com"
+ email: "furiafc93@gmail.com"
 
 # Manage languages
 # For any more details, you can check the official documentation: https://gohugo.io/content-management/multilingual/
@@ -53,7 +53,7 @@ params:
     favicon: /images/site/favicon_alfo.jpeg
 
   # GitHub repo URL of your site
-  gitRepo: https://github.com/hugo-toha/hugo-toha.github.io
+  gitRepo: https://github.com/MovieMaker93/portfolio-alfonso
 
   # specify whether you want to write some blog posts or not
   enableBlogPost: true

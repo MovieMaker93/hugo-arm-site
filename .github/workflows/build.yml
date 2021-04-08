@@ -47,7 +47,7 @@ jobs:
             --cache-to "type=local,dest=/tmp/.buildx-cache" \
             --platform linux/arm/v6,linux/arm/v7,linux/arm64 \
             --output "type=image,push=false" \
-            --tag alfonsofortunato/hugo-app:latest \
+            --tag alfonsofortunato/hugo-app:${{ github.sha }} \
             --file ./Dockerfile ./
       -
         name: Login to DockerHub
@@ -62,7 +62,7 @@ jobs:
             --cache-from "type=local,src=/tmp/.buildx-cache" \
             --platform linux/arm/v6,linux/arm/v7,linux/arm64 \
             --output "type=image,push=true" \
-            --tag alfonsofortunato/hugo-app:latest \
+            --tag alfonsofortunato/hugo-app:${{ github.sha }} \
             --file ./Dockerfile ./
       -
         name: Inspect image

@@ -58,7 +58,7 @@ jobs:
             --cache-to "type=local,dest=/tmp/.buildx-cache" \
             --platform linux/arm/v6,linux/arm/v7,linux/arm64 \
             --output "type=image,push=false" \
-            --tag alfonsofortunato/hugo-app:${GITHUB_BRANCH}-${GITHUB_SHA::8}-$(date +%s) \
+            --tag alfonsofortunato/hugo-app:main-${GITHUB_SHA::8}-$(date +%s) \
             --file ./Dockerfile ./
       -
         name: Login to DockerHub

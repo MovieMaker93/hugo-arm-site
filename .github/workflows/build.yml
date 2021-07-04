@@ -23,6 +23,16 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - name: Prepare
+        id: prep
+        run: |
+          VERSION=${GITHUB_SHA::8}
+          if [[ $GITHUB_REF == refs/tags/* ]]; then
+            VERSION=${GITHUB_REF/refs\/tags\//}
+          fi
+          echo ::set-output name=BUILD_DATE::$(date -u +'%Y-%m-%dT%H:%M:%SZ')
+          echo ::set-output name=VERSION::${VERSION}          
+
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       -
         name: Checkout
@@ -47,7 +57,7 @@ jobs:
             --cache-to "type=local,dest=/tmp/.buildx-cache" \
             --platform linux/arm/v6,linux/arm/v7,linux/arm64 \
             --output "type=image,push=false" \
-            --tag alfonsofortunato/hugo-app:${{ github.sha }} \
+            --tag alfonsofortunato/hugo-app:${{ steps.prep.outputs.VERSION }}} \
             --file ./Dockerfile ./
       -
         name: Login to DockerHub
@@ -62,9 +72,9 @@ jobs:
             --cache-from "type=local,src=/tmp/.buildx-cache" \
             --platform linux/arm/v6,linux/arm/v7,linux/arm64 \
             --output "type=image,push=true" \
-            --tag alfonsofortunato/hugo-app:${{ github.sha }} \
+            --tag alfonsofortunato/hugo-app:${{ steps.prep.outputs.VERSION }} \
             --file ./Dockerfile ./
       -
         name: Inspect image
         run: |
-          docker buildx imagetools inspect alfonsofortunato/hugo-app:latest
+          docker buildx imagetools inspect alfonsofortunato/hugo-app:${{ steps.prep.outputs.VERSION }}

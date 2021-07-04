@@ -4,7 +4,7 @@ My portfolio and blog
 My portfolio is created with hugo framework, you can find information [here](https://gohugo.io/)  
 I choose as theme the Toha theme and i customized it with my contents and configuration.
 
-For testing purpose on local env i do:
+For testing purpose on local env:
 
 `hugo server start`
 

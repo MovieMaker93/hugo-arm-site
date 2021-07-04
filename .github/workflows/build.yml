@@ -58,7 +58,7 @@ jobs:
             --cache-to "type=local,dest=/tmp/.buildx-cache" \
             --platform linux/arm/v6,linux/arm/v7,linux/arm64 \
             --output "type=image,push=false" \
-            --tag alfonsofortunato/hugo-app:${GIT_SHA:0:7} \
+            --tag alfonsofortunato/hugo-app:${{ steps.prep.outputs.VERSION }} \
             --file ./Dockerfile ./
       -
         name: Login to DockerHub
@@ -73,9 +73,9 @@ jobs:
             --cache-from "type=local,src=/tmp/.buildx-cache" \
             --platform linux/arm/v6,linux/arm/v7,linux/arm64 \
             --output "type=image,push=true" \
-            --tag alfonsofortunato/hugo-app:${GIT_SHA:0:7} \
+            --tag alfonsofortunato/hugo-app:${{ steps.prep.outputs.VERSION }} \
             --file ./Dockerfile ./
       -
         name: Inspect image
         run: |
-          docker buildx imagetools inspect alfonsofortunato/hugo-app:${GIT_SHA:0:7}
+          docker buildx imagetools inspect alfonsofortunato/hugo-app:${{ steps.prep.outputs.VERSION }}

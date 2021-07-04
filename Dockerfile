@@ -8,9 +8,10 @@ RUN wget --quiet "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VER
     tar xzf hugo_${HUGO_VERSION}_Linux-64bit.tar.gz && \
     rm -r hugo_${HUGO_VERSION}_Linux-64bit.tar.gz && \
     mv hugo /usr/bin
-
-COPY ./ /site
+    
 WORKDIR /site
+COPY . .
+
 RUN /usr/bin/hugo
 
 #Copy static files to Nginx

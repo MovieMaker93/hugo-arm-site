@@ -25,19 +25,12 @@ projects:
   timeline: "Jan 2017 - Nov 2017"
   summary: "Thesis about the facial recognition on a dataset used for training and testing"
   tags: ["academic","ia"]
+  
 
-- name: Raspberry cluster
-  logo: /images/sections/projects/raspLogoPng.png
-  role: Owner
-  timeline: "Nov 2020 - Present"
-  url: #
-  summary: A experimental local kubernates cluster with k3s (Blog post incoming about it)
-  tags: ["hobby","kubernates","hugo","docker","github action"]
-
-- name: My portfolio and blog
+- name: Portfolio and blog
   logo: /images/sections/projects/raspLogoPng.png
   role: Owner
   timeline: "Feb 2021 - Present"
-  repo: https://github.com/MovieMaker93/portfolio-alfonso
+  repo: https://github.com/MovieMaker93/hugo-arm-site
   summary: My portfolio built with hugo and toha theme. 
   tags: ["hobby","hugo","docker","github action"]

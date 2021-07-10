@@ -147,5 +147,7 @@ Finally you will have your ARM64 image that you can pull and run on Your Raspber
 ## KUBERNATES CONFIGURATION
 
 If you have in place a **kubernates raspberry cluster** you can easily use this image for your pods.  
-For automating your image version on yuor kubernates deployment manifest you can easily integrate this FLUX
+On this [repository](https://github.com/MovieMaker93/flux-portfolio-image) , you will find a solution to automatic update the image associated with your kubernates manifest through **Flux** image scanning feature.  
+
+
 

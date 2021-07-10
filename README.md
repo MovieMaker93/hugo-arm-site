@@ -1,11 +1,11 @@
 # Sample portfolio/blog for your Raspberry Cluster
 
-The scope of this repository is to create an **ARM64** docker image for your [Hugo](https://gohugo.io/) site, and runs it on your own **Raspberry cluster at Home**.   
-There is also a github action that is triggered on each **push** made in the **master** branch.  
-This action builds and pushes the docker image to your Dockerhub repository.  
+The scope of this repository is to create an **ARM64** docker image for your [Hugo](https://gohugo.io/) site, and runs it on your own **Raspberry cluster at Home**.    
+Toha theme has been used as basic hugo theme for this sample, check the [toha repository](https://github.com/hugo-toha/toha) for more info
 
 ## Dockerfle
 
+The dockerfile creates an nginx server that contains all the site content built with Hugo:
 ```
 FROM nginx:alpine as build
 
@@ -35,18 +35,26 @@ This **Dockerfile** :
 3. Moves the content of the site in the **nginx** html directory
 
 For **local testing** on linux 64bit machine:
-Prerequistes: 
+Prerequisites: 
 1. Have docker already installed on your machine
 2. Run the image on linux 64bit machine
 
 Commands:
-1. Build the image with : ```docker build . ```
-2. Run the image with: ```docker run ```
+1. Build the image with : ```docker build --tag mysite . ```
+2. Run the image with: ```docker container run -d -p 80:80 mysite:latest ```
 
+The site will be on http://localhost:80
 
-For testing purpose on local env::
+### Option 2 local testing
+You can also try the site on localhost with Hugo itself:
+Prerequisites:
+1, Have hugo installed on your machinge check this [link](https://gohugo.io/getting-started/installing/)
+2. Run the command where is located the **config.yaml** file
 
+Command:
 `hugo server start`
+
+The site will be on http://localhost:1313
 
 ## Netlify 
 

@@ -1,8 +1,47 @@
-# Sample portfolio/blog
+# Sample portfolio/blog for your Raspberry Cluster
 
+The scope of this repository is to create an **ARM64** docker image for your [Hugo](https://gohugo.io/) site, and runs it on your own **Raspberry cluster at Home**.   
+There is also a github action that is triggered on each **push** made in the **master** branch.  
+This action builds and pushes the docker image to your Dockerhub repository.  
 
-This sample/portfolio is created with hugo static site generator, you can find information [here](https://gohugo.io/)  
+## Dockerfle
 
+```
+FROM nginx:alpine as build
+
+RUN apk add --update \
+    wget
+    
+ARG HUGO_VERSION="0.72.0"
+RUN wget --quiet "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz" && \
+    tar xzf hugo_${HUGO_VERSION}_Linux-64bit.tar.gz && \
+    rm -r hugo_${HUGO_VERSION}_Linux-64bit.tar.gz && \
+    mv hugo /usr/bin
+    
+WORKDIR /site
+COPY . .
+
+RUN /usr/bin/hugo
+
+#Copy static files to Nginx
+FROM nginx:alpine
+COPY --from=build /site/public /usr/share/nginx/html
+
+WORKDIR /usr/share/nginx/html
+```
+This **Dockerfile** :
+1. Downloads the hugo bin for 64bit linux
+2. Builds the content of the site in the **/site** directory with ```RUN /usr/bin/hugo```
+3. Moves the content of the site in the **nginx** html directory
+
+For **local testing** on linux 64bit machine:
+Prerequistes: 
+1. Have docker already installed on your machine
+2. Run the image on linux 64bit machine
+
+Commands:
+1. Build the image with : ```docker build . ```
+2. Run the image with: ```docker run ```
 
 
 For testing purpose on local env::

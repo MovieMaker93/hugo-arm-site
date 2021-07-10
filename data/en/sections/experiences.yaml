@@ -3,7 +3,7 @@ section:
   name: Experiences
   id: experiences
   enable: true
-  weight: 3
+  weight: 2
   showOnNavbar: true
   # Can optionally hide the title in sections
   # hideTitle: true 
@@ -11,11 +11,11 @@ section:
 # Your experiences
 experiences:
 - company:
-    name: Accenture 
-    url: "https://www.accenture.com"
+    name: Example 
+    url: "https://www.example.com"
     location: Naples
     # company overview
-    overview: Accenture. is a widely recognized company for software enterprise development. It builds software for everything.
+    overview: Your experience
   positions:
   - designation: Solution developer
     start: Gen 2019
@@ -27,28 +27,13 @@ experiences:
     - Provide performance analyisis and solution for ecommerce (network infrustracture, code smell and database query)
 
 - company:
-    name: Engennering 
-    url: "https://www.engennering.com"
+    name: Example 
+    url: "https://www.example.com"
     location: Naples
-    overview: Engeneering spa is a software company which focus on building site for public administration.
+    overview: Your experience
   positions:
   - designation: Software Engineer
     start: June 2018
     end: Dec 2018
     responsibilities:
-    - Build site from scratch with Java and angular.
-    - Learn lot of stuff about code and deploy. 
-
-- company:
-    name: Sintex srl.
-    url: "https://www.sintex.com"
-    location: Salerno
-    overview: Sintex srl is a software company where you can learn to code .
-  positions:
-  - designation: Stage
-    start: Feb 2018
-    end: June 2018
-    responsibilities:
-    - Learn java
-    - Read and write lot of examples
-    - Learn software development
+    - Doing my job

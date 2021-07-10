@@ -117,7 +117,7 @@ jobs:
             --cache-to "type=local,dest=/tmp/.buildx-cache" \
             --platform linux/arm/v6,linux/arm/v7,linux/arm64 \
             --output "type=image,push=false" \
-            --tag <your-image>/<your-app>:${{ steps.prep.outputs.VERSION }} \
+            --tag <your-repository>/<your-image-name>:${{ steps.prep.outputs.VERSION }} \
             --file ./Dockerfile ./
       -
         name: Login to DockerHub
@@ -132,12 +132,20 @@ jobs:
             --cache-from "type=local,src=/tmp/.buildx-cache" \
             --platform linux/arm/v6,linux/arm/v7,linux/arm64 \
             --output "type=image,push=true" \
-            --tag <your-image>/<your-app>:${{ steps.prep.outputs.VERSION }} \
+            --tag <your-repository>/<your-image-name>:${{ steps.prep.outputs.VERSION }} \
             --file ./Dockerfile ./
       -
         name: Inspect image
         run: |
-          docker buildx imagetools inspect <your-image>/<your-app>:${{ steps.prep.outputs.VERSION }}
+          docker buildx imagetools inspect <your-repository>/<your-image-name>:${{ steps.prep.outputs.VERSION }}
 ```
-###Prerequisites:
+1. Create a **DOCKER_USERNAME** and **DOCKER_PASSWORD** secret in your github repository
+2. Replace **your-repository** with the name of your dockerhub repository and **your-image-name** with the name of your image 
+
+Finally you will have your ARM64 image that you can pull and run on Your Raspberry Cluster.
+
+## KUBERNATES CONFIGURATION
+
+If you have in place a **kubernates raspberry cluster** you can easily use this image for your pods.  
+For automating your image version on yuor kubernates deployment manifest you can easily integrate this FLUX
 

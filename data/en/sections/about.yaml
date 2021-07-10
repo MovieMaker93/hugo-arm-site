@@ -11,14 +11,14 @@ section:
 designation: Software Engineer
 # your company information
 company:
-  name: Accenture
-  url: "https://www.accenture.com"
+  name: Example
+  url: "https://www.example.com"
 
 # your resume. this file path should be relative to you "static" directory
 resume: "files/resume.pdf"
 
 # a summary about you
-summary: 'I am a passionate software engineer with 3 years of working experience. I love tecnology and 3d printing.'
+summary: 'I am a passionate software engineer with 3 years of working experience. I love dogs.'
 
 # your social links
 # give as many as you want. use font-awesome for the icons.

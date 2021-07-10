@@ -3,7 +3,7 @@
 My portfolio is created with hugo static site generator, you can find information [here](https://gohugo.io/)  
 
 
-For testing purpose on local env:
+For testing purpose on local env::
 
 `hugo server start`
 

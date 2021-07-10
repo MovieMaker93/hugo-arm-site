@@ -14,7 +14,7 @@ degrees:
   icon: fa-graduation-cap
   timeframe: 2017
   institution:
-    name: Universita degli studi di Salerno
+    name: University example
     url: "#"
   takenCourses: #(optional)
     # if true, the courses will be rendered as a table otherwise it will render as a list and the grades will be hidden.
@@ -27,4 +27,4 @@ degrees:
   icon: fa-school
   timeframe: 2007-2012
   institution:
-    name: Liceo scientifico A.gallotta
+    name: High school example

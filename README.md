@@ -1,8 +1,7 @@
-# My-portfolio
-My portfolio and blog
+# My portfolio/blog
 
-My portfolio is created with hugo framework, you can find information [here](https://gohugo.io/)  
-I choose as theme the Toha theme and i customized it with my contents and configuration.
+My portfolio is created with hugo static site generator, you can find information [here](https://gohugo.io/)  
+
 
 For testing purpose on local env:
 

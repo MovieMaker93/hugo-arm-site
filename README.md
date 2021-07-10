@@ -92,6 +92,7 @@ The above github action (configured in the repository) gives the possibility to 
 ## DOCKER BUILD ACTION
 
 build.yml
+```yaml
 # Build and push your docker arm image
 
 name: buildx

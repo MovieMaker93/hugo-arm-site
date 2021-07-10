@@ -50,7 +50,7 @@ params:
   logo:
     main: /images/site/logo.png
     inverted: /images/site/logo.png
-    favicon: /images/site/favicon_alfo.jpeg
+    favicon: /images/site/favicon.png
 
   # GitHub repo URL of your site
   #  gitRepo: https://github.com/MovieMaker93/portfolio-alfonso

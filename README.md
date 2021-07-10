@@ -89,11 +89,10 @@ jobs:
 ```
 The above github action (configured in the repository) gives the possibility to deploy the site for github page.
 
-## DOCKER
+## DOCKER BUILD ACTION
 
 build.yml
-```yaml
-# This is a basic workflow to help you get started with Actions
+# Build and push your docker arm image
 
 name: buildx
 
@@ -128,6 +127,8 @@ jobs:
       -
         name: Checkout
         uses: actions/checkout@v2
+        with:
+          submodules: recursive
       -
         name: Set up Docker Buildx
         uses: crazy-max/ghaction-docker-buildx@v3

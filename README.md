@@ -1,11 +1,11 @@
 # Sample portfolio/blog for your Raspberry Cluster
 
-The scope of this repository is to create an **ARM64** docker image for your [Hugo](https://gohugo.io/) site, and runs it on your own **Raspberry cluster at Home**.    
-Toha theme has been used as basic hugo theme for this sample, check the [toha repository](https://github.com/hugo-toha/toha) for more info
+The scope of this repository is to create an **ARM64** docker image for your [Hugo](https://gohugo.io/) site and runs it on your **Raspberry cluster at Home**.    
+the Toha theme has been used as a basic Hugo theme for this sample, check the [toha repository](https://github.com/hugo-toha/toha) for more info
 
 ## Dockerfle
 
-The dockerfile creates an nginx server that contains all the site content built with Hugo:
+The Dockerfile creates an Nginx server that contains all the site content built with Hugo:
 ```
 FROM nginx:alpine as build
 
@@ -30,14 +30,14 @@ COPY --from=build /site/public /usr/share/nginx/html
 WORKDIR /usr/share/nginx/html
 ```
 This **Dockerfile** :
-1. Downloads the hugo bin for 64bit linux
+1. Downloads the Hugo bin for 64bit Linux
 2. Builds the content of the site in the **/site** directory with ```RUN /usr/bin/hugo```
-3. Moves the content of the site in the **nginx** html directory
+3. Moves the content of the site in the **Nginx** HTML directory
 
-For **local testing** on linux 64bit machine:  
+For **local testing** on Linux 64bit machine:  
 Prerequisites: 
 1. Have docker already installed on your machine  
-2. Run the image on linux 64bit machine
+2. Run the image on a linux 64bit machine
 
 Commands:
 1. Build the image with : ```docker build --tag mysite . ```
@@ -48,7 +48,7 @@ The site will be on http://localhost:80
 ### Option 2 local testing
 You can also try the site on localhost with Hugo itself:  
 Prerequisites:  
-1. Have hugo installed on your machinge check this [link](https://gohugo.io/getting-started/installing/)  
+1. Have Hugo installed on your machine check this [link](https://gohugo.io/getting-started/installing/)  
 2. Run the command where is located the **config.yaml** file
 
 Command:
@@ -142,12 +142,12 @@ jobs:
 1. Create a **DOCKER_USERNAME** and **DOCKER_PASSWORD** secret in your github repository
 2. Replace **your-repository** with the name of your dockerhub repository and **your-image-name** with the name of your image 
 
-Finally you will have your ARM64 image that you can pull and run on Your Raspberry Cluster.
+Finally, you will have the ARM64 image that you can pull and run on Your Raspberry Cluster.
 
 ## KUBERNATES CONFIGURATION
 
-If you have in place a **kubernates raspberry cluster** you can easily use this image for your pods.  
-On this [repository](https://github.com/MovieMaker93/flux-portfolio-image) , you will find a solution to automatically update the image associated with your kubernates manifest through **Flux** image scanning feature.  
+If you have in place a **Kubernetes raspberry cluster** you can easily use this image for your pods.  
+On this [repository](https://github.com/MovieMaker93/flux-portfolio-image), you will find a solution to automatically update the image associated with your Kubernetes manifest through **Flux** image scanning feature.  
 
 
 

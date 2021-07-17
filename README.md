@@ -67,7 +67,7 @@ Command:
 The site will be on http://localhost:1313
 
 ## GITHUB action build.yaml
-The image above hasn't been compatible yet with **ARM64** machine, so in the repository there is a github action called **build.yaml** that has the scope to build an arm64 image and push it on your Dockerhub repository:  
+This Github action (triggered on push) automatically builds and pushes the image to your Dockerhub repository: 
 build.yml
 ```yaml
 # Build and push your docker arm image

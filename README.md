@@ -43,6 +43,16 @@ Commands:
 1. Build the image with : ```docker build --tag mysite . ```
 2. Run the image with: ```docker container run -d -p 80:80 mysite:latest ```
 
+For **local testing** on Arm64 machine:  
+Prerequisites: 
+1. Have docker already installed on your machine  
+2. Run the image on an arm64 machine
+
+Commands:
+1. Enable the **buildx** feature by running the command: ```docker buildx install ```
+2. Build the image with : ```docker buildx build --platform linux/arm/v6,linux/arm/v7,linux/arm64 --tag mysite  . ```
+3. Run the image with: ```docker container run -d -p 80:80 mysite:latest ```
+
 The site will be on http://localhost:80
 
 ### Option 2 local testing

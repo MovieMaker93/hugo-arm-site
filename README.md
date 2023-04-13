@@ -1,7 +1,7 @@
 # Sample portfolio/blog for your Raspberry Cluster
 
 The scope of this repository is to create an **ARM64** docker image for your [Hugo](https://gohugo.io/) site and runs it on your **Raspberry cluster at Home**.    
-the Toha theme has been used as a basic Hugo theme for this sample, check the [toha repository](https://github.com/hugo-toha/toha) for more info
+The Toha theme has been used as a basic Hugo theme for this sample, check the [toha repository](https://github.com/hugo-toha/toha) for more info
 
 ## Dockerfle
 
